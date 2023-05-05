@@ -1,7 +1,7 @@
 Example Voting (Instavote) App
 =========
 
-C'est un test git
+C'est un test git !
 
 Getting started
 ---------------
