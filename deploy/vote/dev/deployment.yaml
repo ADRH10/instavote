@@ -4,13 +4,20 @@ metadata:
   creationTimestamp: null
   labels:
     app: vote
-    tier: front
   name: vote
 spec:
-  minReadySeconds: 20
   replicas: 3
+  selector:
+    matchLabels:
+      app: vote
+  strategy: {}
   template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: vote
     spec:
       containers:
-      - image: schoolofdevops/vote:v4
+      - image: schoolofdevops/vote:v1
         name: vote
+        resources: {}
