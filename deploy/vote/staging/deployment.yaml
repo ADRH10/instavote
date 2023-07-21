@@ -9,7 +9,7 @@ spec:
   replicas: 5
   selector:
     matchLabels:
-      app: vote-staging
+      app: vote
   strategy: {}
   template:
     metadata:
@@ -21,3 +21,4 @@ spec:
       - image: schoolofdevops/vote:v3
         name: vote
         resources: {}
+status: {}
