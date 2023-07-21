@@ -9,7 +9,7 @@ spec:
   replicas: 6 
   selector:
     matchLabels:
-      app: vote
+      name: vote
   template:
     spec:
       containers:
