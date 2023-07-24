@@ -1,4 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+metadata:
+  name: redis-staging
+commonLabels:
+  app: vote-staging
+  env: staging
+commonAnnotations:
+  supported-by: "sre@example.com"
 resources:
 - ../base
