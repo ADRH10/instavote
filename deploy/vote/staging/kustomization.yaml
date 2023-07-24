@@ -3,9 +3,10 @@ kind: Kustomization
 metadata:
   name: vote-staging
 commonLabels:
-  app: vote-staging 
+  app: vote-staging
+  env: staging
 resources:
-- ../base
+- ../base/
 resources:
 - deployment.yaml
 - service.yaml
